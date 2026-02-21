@@ -22,15 +22,14 @@
     <header class="hero">
         <nav class="nav">
             <div class="logo">
-                <img src="https://rodytech.net/assets/logo.png" alt="RodyTech" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                <span class="logo-text" style="display:none">RodyTech</span>
+                <span class="logo-text">RodyTech</span>
             </div>
             <div class="nav-links">
                 <a href="#demo" class="nav-link">See Demo</a>
                 <a href="#calculator" class="nav-link">ROI Calculator</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
             </div>
-            <a href="#demo" class="cta-button secondary">Try Demo</a>
+            <a href="#" class="cta-button secondary" onclick="openLeadModal()">Get Started</a>
         </nav>
         
         <div class="hero-content">
@@ -41,14 +40,13 @@
                 automatically. You wake up to warm leads ready for your sales call.
             </p>
             <div class="hero-cta">
-                <a href="#demo" class="cta-button primary pulse">
-                    <span>🎯</span> Try Live Demo
+                <a href="#" class="cta-button primary pulse" onclick="openLeadModal(); return false;">
+                    <span>🎯</span> Get Free Sample Leads
                 </a>
                 <a href="#calculator" class="cta-button outline">
                     <span>💰</span> Calculate Savings
                 </a>
             </div>
-            
             <div class="hero-stats">
                 <div class="stat">
                     <div class="stat-value" data-target="20">0</div>
@@ -144,7 +142,7 @@
             </div>
 
             <div class="calculator-card">
-                <div class="calc-inputs">
+                <div class="calculator-inputs">
                     <div class="input-group">
                         <label for="hourly-rate">Your Hourly Rate ($)</label>
                         <input type="number" id="hourly-rate" value="50" min="20" max="500">
@@ -167,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="calc-results">
+                <div class="calculator-results">
                     <h3>Your Results</h3>
                     <div class="result-grid">
                         <div class="result-item">
@@ -191,6 +189,9 @@
                             <span class="result-label">To break even</span>
                         </div>
                     </div>
+                    <button class="cta-button primary full" onclick="openLeadModal()">
+                        Get Your Free Sample Leads
+                    </button>
                 </div>
             </div>
         </div>
@@ -237,7 +238,6 @@
                     </button>
                 </div>
 
-                <!-- Agent Working State -->
                 <div class="agent-working" id="agent-working" style="display:none">
                     <div class="agent-header">
                         <div class="agent-avatar">🤖</div>
@@ -252,31 +252,25 @@
                             <div class="wf-icon">🔍</div>
                             <div class="wf-content">
                                 <div class="wf-title">Researching Prospects</div>
-                                <div class="wf-desc">Finding Iowa manufacturing companies...</div>
+                                <div class="wf-desc">Finding Iowa companies...</div>
                             </div>
-                            <div class="wf-progress">
-                                <div class="wf-bar"></div>
-                            </div>
+                            <div class="wf-progress"><div class="wf-bar"></div></div>
                         </div>
                         <div class="wf-step" id="wf-2">
                             <div class="wf-icon">📄</div>
                             <div class="wf-content">
                                 <div class="wf-title">Extracting Contacts</div>
-                                <div class="wf-desc">Scraping websites for emails & phones...</div>
+                                <div class="wf-desc">Scraping websites...</div>
                             </div>
-                            <div class="wf-progress">
-                                <div class="wf-bar"></div>
-                            </div>
+                            <div class="wf-progress"><div class="wf-bar"></div></div>
                         </div>
                         <div class="wf-step" id="wf-3">
                             <div class="wf-icon">⭐</div>
                             <div class="wf-content">
                                 <div class="wf-title">Scoring Leads</div>
-                                <div class="wf-desc">Analyzing IBAT criteria...</div>
+                                <div class="wf-desc">Analyzing IBAT...</div>
                             </div>
-                            <div class="wf-progress">
-                                <div class="wf-bar"></div>
-                            </div>
+                            <div class="wf-progress"><div class="wf-bar"></div></div>
                         </div>
                         <div class="wf-step" id="wf-4">
                             <div class="wf-icon">📧</div>
@@ -284,9 +278,7 @@
                                 <div class="wf-title">Writing Emails</div>
                                 <div class="wf-desc">Personalizing outreach...</div>
                             </div>
-                            <div class="wf-progress">
-                                <div class="wf-bar"></div>
-                            </div>
+                            <div class="wf-progress"><div class="wf-bar"></div></div>
                         </div>
                     </div>
 
@@ -306,45 +298,33 @@
                     </div>
                 </div>
 
-                <!-- Results State -->
                 <div class="demo-results" id="demo-results" style="display:none">
-                    <div class="results-tabs">
-                        <button class="tab-btn active" data-tab="prospects">📋 Prospects</button>
-                        <button class="tab-btn" data-tab="email">📧 Email Preview</button>
-                        <button class="tab-btn" data-tab="export">📤 Export</button>
+                    <div class="results-header">
+                        <h3>✅ Campaign Complete!</h3>
+                        <div class="results-actions">
+                            <button class="tab-btn active" data-tab="prospects">📋 Prospects</button>
+                            <button class="tab-btn" data-tab="email">📧 Email Preview</button>
+                        </div>
                     </div>
 
                     <div class="tab-panel active" id="panel-prospects">
                         <table class="prospects-table">
                             <thead>
-                                <tr>
-                                    <th>Company</th>
-                                    <th>Location</th>
-                                    <th>Contact</th>
-                                    <th>Score</th>
-                                </tr>
+                                <tr><th>Company</th><th>Location</th><th>Contact</th><th>Score</th></tr>
                             </thead>
-                            <tbody id="prospects-body">
-                                <!-- Populated by JS -->
-                            </tbody>
+                            <tbody id="prospects-body"></tbody>
                         </table>
                     </div>
 
                     <div class="tab-panel" id="panel-email">
                         <div class="email-preview-box">
-                            <div class="email-field">
-                                <label>To:</label>
-                                <span>mike@midwestmetal.com</span>
-                            </div>
-                            <div class="email-field">
-                                <label>Subject:</label>
-                                <span>Quick question about Midwest Metal's growth</span>
-                            </div>
+                            <div class="email-field"><label>To:</label><span>mike@midwestmetal.com</span></div>
+                            <div class="email-field"><label>Subject:</label><span>Quick question about Midwest Metal's growth</span></div>
                             <div class="email-body">
                                 <p>Hi Mike,</p>
-                                <p>I noticed Midwest Metal Products has been expanding rapidly in the Cedar Rapids area. Impressive growth!</p>
-                                <p>I'm reaching out because we work with Iowa manufacturers to automate their lead generation. One of our clients, TMT Fab, saw a <strong>3x increase in qualified leads</strong> within 30 days of using our AI agent.</p>
-                                <p>Worth a brief conversation to see if we could do the same for Midwest Metal?</p>
+                                <p>I noticed Midwest Metal Products has been expanding rapidly in the Cedar Rapids area...</p>
+                                <p>We built an AI Lead Gen Agent that helped TMT Fab 3X their qualified leads in 30 days...</p>
+                                <p>Worth a brief conversation?</p>
                                 <p>Best,<br>Rody</p>
                             </div>
                             <div class="email-footer">
@@ -353,19 +333,10 @@
                         </div>
                     </div>
 
-                    <div class="tab-panel" id="panel-export">
-                        <div class="export-options">
-                            <button class="export-btn active" data-export="csv">CSV</button>
-                            <button class="export-btn" data-export="json">JSON</button>
-                            <button class="export-btn" data-export="html">HTML Report</button>
-                        </div>
-                        <div class="export-preview">
-                            <pre id="export-content">Company,Contact,Email,Phone,Score
-Midwest Metal Products,Mike Johnson,mike@midwestmetal.com,(319) 555-0123,87
-TMT Fabrication,Sarah Chen,sarah@tmtfab.com,(515) 555-0456,72
-Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
-...</pre>
-                        </div>
+                    <div class="demo-cta">
+                        <button class="cta-button primary large" onclick="openLeadModal()">
+                            Get These Leads For Your Business
+                        </button>
                     </div>
                 </div>
             </div>
@@ -382,32 +353,32 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                 <div class="feature-card">
                     <div class="feature-icon">🔍</div>
                     <h3>Smart Research</h3>
-                    <p>AI finds Iowa businesses using real-time web search. No outdated databases.</p>
+                    <p>AI finds Iowa businesses using real-time web search.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📧</div>
                     <h3>Contact Extraction</h3>
-                    <p>Scrapes websites for real decision-maker emails and phone numbers.</p>
+                    <p>Scrapes websites for real decision-maker emails.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>IBAT Scoring</h3>
-                    <p>Proprietary algorithm scores leads 0-100 on Interest, Budget, Authority, Timeline.</p>
+                    <p>Scores leads 0-100 on Interest, Budget, Authority, Timeline.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">✍️</div>
                     <h3>Personalized Outreach</h3>
-                    <p>AI writes industry-specific emails that mention real company details.</p>
+                    <p>AI writes industry-specific emails with company details.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
                     <h3>CRM-Ready Exports</h3>
-                    <p>One-click CSV, JSON, and HTML reports. Import in seconds.</p>
+                    <p>CSV, JSON, HTML reports. Import in seconds.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                     <h3>Runs 24/7</h3>
-                    <p>Works while you sleep. Wake up to new qualified leads every morning.</p>
+                    <p>Wake up to new qualified leads every morning.</p>
                 </div>
             </div>
         </div>
@@ -434,53 +405,53 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Starter</h3>
+                        <div class="pricing-badge">For Small Teams</div>
                         <div class="price" data-onetime="497" data-monthly="97">$497</div>
                         <div class="price-period">one-time</div>
                     </div>
                     <ul class="pricing-features">
-                        <li>25 prospects/month</li>
-                        <li>1 industry focus</li>
-                        <li>Email templates</li>
-                        <li>CSV export</li>
-                        <li class="na">Lead scoring</li>
-                        <li class="na">Follow-up automation</li>
+                        <li><span class="check">✓</span> 25 prospects/month</li>
+                        <li><span class="check">✓</span> 1 industry focus</li>
+                        <li><span class="check">✓</span> Email templates</li>
+                        <li><span class="check">✓</span> CSV export</li>
+                        <li class="na"><span class="x">✗</span> Lead scoring</li>
                     </ul>
-                    <button class="cta-button outline full">Get Started</button>
+                    <button class="cta-button outline full" onclick="openLeadModal()">Get Started</button>
                 </div>
 
                 <div class="pricing-card popular">
                     <div class="popular-badge">MOST POPULAR</div>
                     <div class="pricing-header">
                         <h3>Growth</h3>
+                        <div class="pricing-badge">Best Value</div>
                         <div class="price" data-onetime="1497" data-monthly="297">$1,497</div>
                         <div class="price-period">one-time</div>
                     </div>
                     <ul class="pricing-features">
-                        <li>100 prospects/month</li>
-                        <li>3 industries</li>
-                        <li>AI personalized emails</li>
-                        <li>IBAT lead scoring</li>
-                        <li>Priority support</li>
-                        <li>Follow-up sequences</li>
+                        <li><span class="check">✓</span> 100 prospects/month</li>
+                        <li><span class="check">✓</span> 3 industries</li>
+                        <li><span class="check">✓</span> AI personalized emails</li>
+                        <li><span class="check">✓</span> IBAT lead scoring</li>
+                        <li><span class="check">✓</span> Priority support</li>
                     </ul>
-                    <button class="cta-button primary full">Get Started</button>
+                    <button class="cta-button primary full" onclick="openLeadModal()">Get Started</button>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Enterprise</h3>
+                        <div class="pricing-badge">For Scaling</div>
                         <div class="price" data-onetime="3997" data-monthly="697">$3,997</div>
                         <div class="price-period">one-time</div>
                     </div>
                     <ul class="pricing-features">
-                        <li>Unlimited prospects</li>
-                        <li>All industries</li>
-                        <li>Custom workflows</li>
-                        <li>CRM integration</li>
-                        <li>Dedicated support</li>
-                        <li>White-label option</li>
+                        <li><span class="check">✓</span> Unlimited prospects</li>
+                        <li><span class="check">✓</span> All industries</li>
+                        <li><span class="check">✓</span> Custom workflows</li>
+                        <li><span class="check">✓</span> CRM integration</li>
+                        <li><span class="check">✓</span> White-label option</li>
                     </ul>
-                    <button class="cta-button outline full">Contact Sales</button>
+                    <button class="cta-button outline full" onclick="openLeadModal()">Contact Sales</button>
                 </div>
             </div>
 
@@ -488,7 +459,7 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                 <span class="guarantee-icon">🛡️</span>
                 <div class="guarantee-text">
                     <strong>30-Day Money-Back Guarantee</strong>
-                    <span>Not satisfied? Get a full refund. No questions asked.</span>
+                    <span>Not satisfied? Full refund. No questions asked.</span>
                 </div>
             </div>
         </div>
@@ -507,7 +478,7 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, 100% compliant. We only use publicly available information and send personalized, relevant emails — not mass spam. Each email is tailored to the recipient.</p>
+                        <p>Yes, 100% compliant. We only use publicly available information and send personalized, relevant emails — not mass spam.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -516,7 +487,7 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Most clients see first responses within 24-48 hours. Typical results: 15-25% response rate, 3-5 meetings per 100 prospects.</p>
+                        <p>Most clients see first responses within 24-48 hours. Typical: 15-25% response rate, 3-5 meetings per 100 prospects.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -525,7 +496,7 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Not at all. We handle all setup. You just tell us your target industry and we deliver ready-to-use leads with personalized emails.</p>
+                        <p>Not at all. We handle all setup. You just tell us your industry and we deliver ready-to-use leads.</p>
                     </div>
                 </div>
             </div>
@@ -536,10 +507,10 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Grow Your Business?</h2>
-            <p>Join Iowa businesses already using AI to find qualified leads</p>
+            <p>Join Iowa businesses using AI to find qualified leads</p>
             <div class="cta-buttons">
-                <a href="#demo" class="cta-button primary large">Try Free Demo</a>
-                <a href="#pricing" class="cta-button outline large">View Pricing</a>
+                <button class="cta-button primary large" onclick="openLeadModal()">Get Free Sample Leads</button>
+                <a href="#demo" class="cta-button outline large">Try Demo First</a>
             </div>
         </div>
     </section>
@@ -563,6 +534,74 @@ Liebovich Steel,David Smith,david@liebovichiowa.com,(319) 555-0789,91
             </div>
         </div>
     </footer>
+
+    <!-- Lead Capture Modal -->
+    <div class="modal-overlay" id="leadModal" onclick="closeLeadModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeLeadModal()">&times;</button>
+            
+            <div class="modal-header">
+                <div class="modal-icon">🎯</div>
+                <h2>Get Your Free Sample Leads</h2>
+                <p>See exactly what the AI agent finds for your business. No obligation.</p>
+            </div>
+
+            <form id="leadForm" onsubmit="submitLeadForm(event)">
+                <div class="form-group">
+                    <label for="leadName">Full Name *</label>
+                    <input type="text" id="leadName" name="name" required placeholder="John Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadEmail">Business Email *</label>
+                    <input type="email" id="leadEmail" name="email" required placeholder="john@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadCompany">Company Name *</label>
+                    <input type="text" id="leadCompany" name="company" required placeholder="Acme Manufacturing">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadIndustry">Industry *</label>
+                    <select id="leadIndustry" name="industry" required>
+                        <option value="">Select your industry</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="hvac">HVAC/Plumbing</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="realestate">Real Estate</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="leadPhone">Phone (optional)</label>
+                    <input type="tel" id="leadPhone" name="phone" placeholder="(319) 555-0123">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadMessage">What are your biggest lead gen challenges? (optional)</label>
+                    <textarea id="leadMessage" name="message" rows="3" placeholder="I spend too much time cold calling and not enough time closing..."></textarea>
+                </div>
+
+                <button type="submit" class="cta-button primary full">
+                    <span>📧</span> Send Me Sample Leads
+                </button>
+
+                <p class="form-note">🔒 Your information is secure. We'll never spam you.</p>
+            </form>
+
+            <!-- Success State (hidden by default) -->
+            <div class="modal-success" id="modalSuccess" style="display:none">
+                <div class="success-icon">🎉</div>
+                <h3>You're All Set!</h3>
+                <p>Check your email in the next 5-10 minutes for your sample leads.</p>
+                <p class="success-note">We'll also send you a brief overview of how the AI agent works for your industry.</p>
+                <button class="cta-button secondary full" onclick="closeLeadModal()">Close</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
