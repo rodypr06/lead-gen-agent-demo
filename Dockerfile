@@ -5,8 +5,7 @@ COPY index.html /usr/share/nginx/html/
 COPY style.css /usr/share/nginx/html/
 COPY script.js /usr/share/nginx/html/
 
-# Copy assets and data (these directories exist in the repo)
-COPY assets/ /usr/share/nginx/html/assets/
+# Copy data directory (contains JSON files)
 COPY data/ /usr/share/nginx/html/data/
 
 # Expose port 80
