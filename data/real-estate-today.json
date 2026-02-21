@@ -1,0 +1,142 @@
+{
+  "industry": "real-estate",
+  "displayName": "Real Estate",
+  "prospects": [
+    {
+      "company": "Property Midwest Company",
+      "location": "Ames, IA",
+      "employees": "~43",
+      "website": "www.propertymidwestcompany.com",
+      "leadScore": 67,
+      "painPoints": [
+        "market analysis",
+        "client communication",
+        "property showings"
+      ]
+    },
+    {
+      "company": "Elite Prairie Group",
+      "location": "Iowa City, IA",
+      "employees": "~109",
+      "website": "www.eliteprairiegroup.com",
+      "leadScore": 65,
+      "painPoints": [
+        "lead generation",
+        "tenant screening",
+        "document management"
+      ]
+    },
+    {
+      "company": "Horizon Heartland Manufacturing",
+      "location": "Davenport, IA",
+      "employees": "~48",
+      "website": "www.horizonheartlandmanufacturing.com",
+      "leadScore": 81,
+      "painPoints": [
+        "market analysis",
+        "tenant screening",
+        "lead generation"
+      ]
+    },
+    {
+      "company": "Premier Valley LLC",
+      "location": "Iowa City, IA",
+      "employees": "~50",
+      "website": "www.premiervalleyllc.com",
+      "leadScore": 63,
+      "painPoints": [
+        "document management",
+        "client communication",
+        "lead generation"
+      ]
+    },
+    {
+      "company": "Elite River Inc",
+      "location": "Iowa City, IA",
+      "employees": "~138",
+      "website": "www.eliteriverinc.com",
+      "leadScore": 68,
+      "painPoints": [
+        "document management",
+        "market analysis",
+        "lead generation"
+      ]
+    },
+    {
+      "company": "Horizon Hawkeye Industries",
+      "location": "Council Bluffs, IA",
+      "employees": "~104",
+      "website": "www.horizonhawkeyeindustries.com",
+      "leadScore": 73,
+      "painPoints": [
+        "client communication",
+        "property showings",
+        "market analysis"
+      ]
+    },
+    {
+      "company": "Premier Hawkeye Manufacturing",
+      "location": "Council Bluffs, IA",
+      "employees": "~78",
+      "website": "www.premierhawkeyemanufacturing.com",
+      "leadScore": 63,
+      "painPoints": [
+        "property showings",
+        "tenant screening",
+        "lead generation"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "company": "Property Midwest Company",
+      "contact": "info@www.propertymidwestcompany.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Elite Prairie Group",
+      "contact": "info@www.eliteprairiegroup.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Horizon Heartland Manufacturing",
+      "contact": "info@www.horizonheartlandmanufacturing.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Premier Valley LLC",
+      "contact": "info@www.premiervalleyllc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Elite River Inc",
+      "contact": "info@www.eliteriverinc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Horizon Hawkeye Industries",
+      "contact": "info@www.horizonhawkeyeindustries.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Premier Hawkeye Manufacturing",
+      "contact": "info@www.premierhawkeyemanufacturing.com",
+      "title": "Sales",
+      "verified": true
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-17T04:54:45.832Z",
+    "timezone": "America/Chicago",
+    "prospects_found": 7,
+    "contacts_verified": 7,
+    "industry": "real-estate",
+    "data_source": "generated"
+  }
+}

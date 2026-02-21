@@ -1,0 +1,142 @@
+{
+  "industry": "agriculture",
+  "displayName": "Agriculture",
+  "prospects": [
+    {
+      "company": "Grain Hawkeye Inc",
+      "location": "Ames, IA",
+      "employees": "~100",
+      "website": "www.grainhawkeyeinc.com",
+      "leadScore": 67,
+      "painPoints": [
+        "equipment maintenance",
+        "labor shortages",
+        "market volatility"
+      ]
+    },
+    {
+      "company": "Agri Heartland Solutions",
+      "location": "Sioux City, IA",
+      "employees": "~136",
+      "website": "www.agriheartlandsolutions.com",
+      "leadScore": 65,
+      "painPoints": [
+        "market volatility",
+        "weather impacts",
+        "labor shortages"
+      ]
+    },
+    {
+      "company": "Crop Hawkeye Inc",
+      "location": "Iowa City, IA",
+      "employees": "~109",
+      "website": "www.crophawkeyeinc.com",
+      "leadScore": 85,
+      "painPoints": [
+        "seasonal planning",
+        "market volatility",
+        "weather impacts"
+      ]
+    },
+    {
+      "company": "Agri Central Group",
+      "location": "Iowa City, IA",
+      "employees": "~55",
+      "website": "www.agricentralgroup.com",
+      "leadScore": 82,
+      "painPoints": [
+        "market volatility",
+        "labor shortages",
+        "equipment maintenance"
+      ]
+    },
+    {
+      "company": "Crop Prairie Industries",
+      "location": "Sioux City, IA",
+      "employees": "~22",
+      "website": "www.cropprairieindustries.com",
+      "leadScore": 85,
+      "painPoints": [
+        "supply chain management",
+        "seasonal planning",
+        "market volatility"
+      ]
+    },
+    {
+      "company": "Harvest Hawkeye LLC",
+      "location": "Waterloo, IA",
+      "employees": "~88",
+      "website": "www.harvesthawkeyellc.com",
+      "leadScore": 61,
+      "painPoints": [
+        "supply chain management",
+        "weather impacts",
+        "seasonal planning"
+      ]
+    },
+    {
+      "company": "Field Central Inc",
+      "location": "Iowa City, IA",
+      "employees": "~76",
+      "website": "www.fieldcentralinc.com",
+      "leadScore": 72,
+      "painPoints": [
+        "supply chain management",
+        "labor shortages",
+        "market volatility"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "company": "Grain Hawkeye Inc",
+      "contact": "info@www.grainhawkeyeinc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Agri Heartland Solutions",
+      "contact": "info@www.agriheartlandsolutions.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Crop Hawkeye Inc",
+      "contact": "info@www.crophawkeyeinc.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Agri Central Group",
+      "contact": "info@www.agricentralgroup.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Crop Prairie Industries",
+      "contact": "info@www.cropprairieindustries.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Harvest Hawkeye LLC",
+      "contact": "info@www.harvesthawkeyellc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Field Central Inc",
+      "contact": "info@www.fieldcentralinc.com",
+      "title": "Sales",
+      "verified": true
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-17T04:54:45.744Z",
+    "timezone": "America/Chicago",
+    "prospects_found": 7,
+    "contacts_verified": 4,
+    "industry": "agriculture",
+    "data_source": "generated"
+  }
+}

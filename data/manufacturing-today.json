@@ -1,0 +1,142 @@
+{
+  "industry": "manufacturing",
+  "displayName": "Manufacturing",
+  "prospects": [
+    {
+      "company": "Metal Hawkeye Manufacturing",
+      "location": "Waterloo, IA",
+      "employees": "~148",
+      "website": "www.metalhawkeyemanufacturing.com",
+      "leadScore": 85,
+      "painPoints": [
+        "supply chain disruptions",
+        "staffing shortages",
+        "production bottlenecks"
+      ]
+    },
+    {
+      "company": "Quality Valley Group",
+      "location": "Council Bluffs, IA",
+      "employees": "~52",
+      "website": "www.qualityvalleygroup.com",
+      "leadScore": 61,
+      "painPoints": [
+        "equipment downtime",
+        "production bottlenecks",
+        "data management"
+      ]
+    },
+    {
+      "company": "Industrial Cedar Corp",
+      "location": "Des Moines, IA",
+      "employees": "~62",
+      "website": "www.industrialcedarcorp.com",
+      "leadScore": 61,
+      "painPoints": [
+        "equipment downtime",
+        "staffing shortages",
+        "data management"
+      ]
+    },
+    {
+      "company": "Precision Heartland Inc",
+      "location": "Waterloo, IA",
+      "employees": "~31",
+      "website": "www.precisionheartlandinc.com",
+      "leadScore": 87,
+      "painPoints": [
+        "data management",
+        "quality control",
+        "staffing shortages"
+      ]
+    },
+    {
+      "company": "Industrial Prairie Solutions",
+      "location": "Davenport, IA",
+      "employees": "~105",
+      "website": "www.industrialprairiesolutions.com",
+      "leadScore": 74,
+      "painPoints": [
+        "data management",
+        "production bottlenecks",
+        "staffing shortages"
+      ]
+    },
+    {
+      "company": "Custom Heartland Corp",
+      "location": "Cedar Rapids, IA",
+      "employees": "~97",
+      "website": "www.customheartlandcorp.com",
+      "leadScore": 87,
+      "painPoints": [
+        "data management",
+        "equipment downtime",
+        "production bottlenecks"
+      ]
+    },
+    {
+      "company": "Quality Cedar Solutions",
+      "location": "Iowa City, IA",
+      "employees": "~51",
+      "website": "www.qualitycedarsolutions.com",
+      "leadScore": 71,
+      "painPoints": [
+        "production bottlenecks",
+        "equipment downtime",
+        "quality control"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "company": "Metal Hawkeye Manufacturing",
+      "contact": "info@www.metalhawkeyemanufacturing.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Quality Valley Group",
+      "contact": "info@www.qualityvalleygroup.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Industrial Cedar Corp",
+      "contact": "info@www.industrialcedarcorp.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Precision Heartland Inc",
+      "contact": "info@www.precisionheartlandinc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Industrial Prairie Solutions",
+      "contact": "info@www.industrialprairiesolutions.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Custom Heartland Corp",
+      "contact": "info@www.customheartlandcorp.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Quality Cedar Solutions",
+      "contact": "info@www.qualitycedarsolutions.com",
+      "title": "Sales",
+      "verified": false
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-17T04:55:23.960Z",
+    "timezone": "America/Chicago",
+    "prospects_found": 7,
+    "contacts_verified": 4,
+    "industry": "manufacturing",
+    "data_source": "generated"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "industry": "healthcare",
+  "displayName": "Healthcare",
+  "prospects": [
+    {
+      "company": "Clinical Central Corp",
+      "location": "Des Moines, IA",
+      "employees": "~46",
+      "website": "www.clinicalcentralcorp.com",
+      "leadScore": 66,
+      "painPoints": [
+        "staffing shortages",
+        "patient follow-up",
+        "patient scheduling"
+      ]
+    },
+    {
+      "company": "Wellness Heartland Inc",
+      "location": "Cedar Rapids, IA",
+      "employees": "~66",
+      "website": "www.wellnessheartlandinc.com",
+      "leadScore": 61,
+      "painPoints": [
+        "staffing shortages",
+        "patient scheduling",
+        "patient follow-up"
+      ]
+    },
+    {
+      "company": "Medical State LLC",
+      "location": "Council Bluffs, IA",
+      "employees": "~20",
+      "website": "www.medicalstatellc.com",
+      "leadScore": 86,
+      "painPoints": [
+        "patient scheduling",
+        "patient follow-up",
+        "regulatory compliance"
+      ]
+    },
+    {
+      "company": "Medical Central Company",
+      "location": "Des Moines, IA",
+      "employees": "~74",
+      "website": "www.medicalcentralcompany.com",
+      "leadScore": 79,
+      "painPoints": [
+        "patient scheduling",
+        "regulatory compliance",
+        "patient follow-up"
+      ]
+    },
+    {
+      "company": "Wellness Heartland LLC",
+      "location": "Iowa City, IA",
+      "employees": "~95",
+      "website": "www.wellnessheartlandllc.com",
+      "leadScore": 60,
+      "painPoints": [
+        "insurance claims",
+        "regulatory compliance",
+        "patient scheduling"
+      ]
+    },
+    {
+      "company": "Wellness Heartland Solutions",
+      "location": "Cedar Rapids, IA",
+      "employees": "~103",
+      "website": "www.wellnessheartlandsolutions.com",
+      "leadScore": 87,
+      "painPoints": [
+        "insurance claims",
+        "patient follow-up",
+        "patient scheduling"
+      ]
+    },
+    {
+      "company": "Wellness Hawkeye Industries",
+      "location": "Des Moines, IA",
+      "employees": "~45",
+      "website": "www.wellnesshawkeyeindustries.com",
+      "leadScore": 76,
+      "painPoints": [
+        "regulatory compliance",
+        "patient follow-up",
+        "administrative burden"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "company": "Clinical Central Corp",
+      "contact": "info@www.clinicalcentralcorp.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Wellness Heartland Inc",
+      "contact": "info@www.wellnessheartlandinc.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Medical State LLC",
+      "contact": "info@www.medicalstatellc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Medical Central Company",
+      "contact": "info@www.medicalcentralcompany.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Wellness Heartland LLC",
+      "contact": "info@www.wellnessheartlandllc.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Wellness Heartland Solutions",
+      "contact": "info@www.wellnessheartlandsolutions.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Wellness Hawkeye Industries",
+      "contact": "info@www.wellnesshawkeyeindustries.com",
+      "title": "Sales",
+      "verified": false
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-17T04:54:45.805Z",
+    "timezone": "America/Chicago",
+    "prospects_found": 7,
+    "contacts_verified": 4,
+    "industry": "healthcare",
+    "data_source": "generated"
+  }
+}

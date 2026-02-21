@@ -1,0 +1,142 @@
+{
+  "industry": "local-services",
+  "displayName": "Local Services",
+  "prospects": [
+    {
+      "company": "Professional River Inc",
+      "location": "Waterloo, IA",
+      "employees": "~85",
+      "website": "www.professionalriverinc.com",
+      "leadScore": 70,
+      "painPoints": [
+        "scheduling management",
+        "inventory tracking",
+        "customer acquisition"
+      ]
+    },
+    {
+      "company": "Quality Iowa Corp",
+      "location": "Dubuque, IA",
+      "employees": "~105",
+      "website": "www.qualityiowacorp.com",
+      "leadScore": 75,
+      "painPoints": [
+        "customer acquisition",
+        "inventory tracking",
+        "scheduling management"
+      ]
+    },
+    {
+      "company": "Professional Hawkeye Manufacturing",
+      "location": "Cedar Rapids, IA",
+      "employees": "~132",
+      "website": "www.professionalhawkeyemanufacturing.com",
+      "leadScore": 85,
+      "painPoints": [
+        "inventory tracking",
+        "staff coordination",
+        "customer acquisition"
+      ]
+    },
+    {
+      "company": "Quality Central Solutions",
+      "location": "Ames, IA",
+      "employees": "~86",
+      "website": "www.qualitycentralsolutions.com",
+      "leadScore": 69,
+      "painPoints": [
+        "staff coordination",
+        "customer acquisition",
+        "customer retention"
+      ]
+    },
+    {
+      "company": "Master Valley Company",
+      "location": "Davenport, IA",
+      "employees": "~128",
+      "website": "www.mastervalleycompany.com",
+      "leadScore": 78,
+      "painPoints": [
+        "marketing effectiveness",
+        "customer retention",
+        "customer acquisition"
+      ]
+    },
+    {
+      "company": "Expert Hawkeye Industries",
+      "location": "Iowa City, IA",
+      "employees": "~79",
+      "website": "www.experthawkeyeindustries.com",
+      "leadScore": 86,
+      "painPoints": [
+        "customer acquisition",
+        "marketing effectiveness",
+        "scheduling management"
+      ]
+    },
+    {
+      "company": "Expert Midwest Industries",
+      "location": "Ames, IA",
+      "employees": "~32",
+      "website": "www.expertmidwestindustries.com",
+      "leadScore": 89,
+      "painPoints": [
+        "staff coordination",
+        "customer retention",
+        "customer acquisition"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "company": "Professional River Inc",
+      "contact": "info@www.professionalriverinc.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Quality Iowa Corp",
+      "contact": "info@www.qualityiowacorp.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Professional Hawkeye Manufacturing",
+      "contact": "info@www.professionalhawkeyemanufacturing.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Quality Central Solutions",
+      "contact": "info@www.qualitycentralsolutions.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Master Valley Company",
+      "contact": "info@www.mastervalleycompany.com",
+      "title": "Sales",
+      "verified": true
+    },
+    {
+      "company": "Expert Hawkeye Industries",
+      "contact": "info@www.experthawkeyeindustries.com",
+      "title": "Sales",
+      "verified": false
+    },
+    {
+      "company": "Expert Midwest Industries",
+      "contact": "info@www.expertmidwestindustries.com",
+      "title": "Sales",
+      "verified": true
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-17T04:54:45.775Z",
+    "timezone": "America/Chicago",
+    "prospects_found": 7,
+    "contacts_verified": 4,
+    "industry": "local-services",
+    "data_source": "generated"
+  }
+}
