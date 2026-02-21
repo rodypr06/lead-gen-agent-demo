@@ -283,10 +283,9 @@ function closeLeadModal(event) {
 }
 
 // ========================================
-// LEAD FORM SUBMISSION - FORMSPREE
+// LEAD FORM SUBMISSION - FORMSPREE (FormData format)
 // ========================================
-// Replace YOUR_FORM_ID with your actual Formspree form ID
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnjbgpgz";
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjbgpgz';
 
 async function submitLeadForm(event) {
     event.preventDefault();
@@ -296,34 +295,35 @@ async function submitLeadForm(event) {
     submitBtn.innerHTML = '<span>⏳</span> Sending...';
     submitBtn.disabled = true;
     
-    // Build form data for Formspree
-    const formData = {
-        name: document.getElementById('leadName').value,
-        email: document.getElementById('leadEmail').value,
-        company: document.getElementById('leadCompany').value,
-        industry: document.getElementById('leadIndustry').value,
-        phone: document.getElementById('leadPhone').value || 'Not provided',
-        message: document.getElementById('leadMessage').value || 'No message',
-        source: 'lead-gen-demo',
-        submittedAt: new Date().toLocaleString()
-    };
+    // Use FormData instead of JSON (works better with Formspree)
+    const formData = new FormData();
+    formData.append('name', document.getElementById('leadName').value);
+    formData.append('email', document.getElementById('leadEmail').value);
+    formData.append('company', document.getElementById('leadCompany').value);
+    formData.append('industry', document.getElementById('leadIndustry').value);
+    formData.append('phone', document.getElementById('leadPhone').value || 'Not provided');
+    formData.append('message', document.getElementById('leadMessage').value || 'No message');
+    formData.append('source', 'lead-gen-demo');
+    formData.append('_subject', 'New Lead from Lead Gen Demo');
     
     try {
         const response = await fetch(FORMSPREE_ENDPOINT, {
             method: 'POST',
+            body: formData,
             headers: {
-                'Content-Type': 'application/json',
                 'Accept': 'application/json'
-            },
-            body: JSON.stringify(formData)
+            }
         });
         
         if (response.ok) {
             // Show success state
             document.getElementById('leadForm').style.display = 'none';
             document.getElementById('modalSuccess').style.display = 'block';
+            
+            // Optional: track conversion
+            console.log('✅ Lead submitted successfully');
         } else {
-            const error = await response.json();
+            const error = await response.text();
             console.error('Formspree error:', error);
             alert('Something went wrong. Please try again or email us at contact@rodytech.net');
         }
@@ -346,4 +346,4 @@ document.addEventListener('keydown', (e) => {
 });
 
 console.log('🤖 RodyTech Lead Gen Agent Demo v2.0 loaded');
-console.log('📝 Formspree integration ready - update FORMSPREE_ENDPOINT with your form ID');
+console.log('📝 Formspree integration ready');
